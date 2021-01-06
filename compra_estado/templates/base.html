@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coin Market Cap - {% block title %}{% endblock %}</title>
+        <style>
+            header{
+            border-style: solid;
+            border-width: 1px;
+            background-color: lightgray;
+            text-align: center;
+            }
+            footer {
+                border-style: solid;
+                border-width: 1px;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: lightgrey;
+                text-align: center;
+            } 
+
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <p>Gestion de Criptmonedas</p>
+        </header>
+        <br>
+
+        <div>
+            <button type="button" onclick="alert('Inicio')">Inicio</button>
+        </div>
+        <br>
+        <div>
+            <button type="button" onclick="alert('Compra')">Compra</button>
+        </div>
+        <br>
+        <div>
+            <button type="button" onclick="alert('Estado')">Estado</button>
+        </div>
+        <br>
+
+            <section>
+                {% block seccion_a_desarrollar %}}{% endblock %}
+            </section>
+
+        <footer>
+            <br>
+            &copy; Daniel Barriele - 2021 - KeepCoding
+            <p>Contacto:<a href="mailto:d.barriele@gmail.com">D.barriele@gmail.com</a></p>
+        </footer>
+    </body>
+</html>
