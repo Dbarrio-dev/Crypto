@@ -7,13 +7,13 @@
         <style>
             header{
             border-style: solid;
-            border-width: 1px;
+            border-width: 3px;
             background-color: lightgray;
             text-align: center;
             }
             footer {
                 border-style: solid;
-                border-width: 1px;
+                border-width: 3px;
                 width: 100%;
                 position: absolute;
                 bottom: 0;
@@ -21,7 +21,6 @@
                 background-color: lightgrey;
                 text-align: center;
             } 
-
 
 
         </style>
@@ -33,15 +32,21 @@
         <br>
 
         <div>
-            <button type="button" onclick="alert('Inicio')">Inicio</button>
+            <form action="/" method="GET">
+                <input type="submit" value="Inicio">
+            </form>
         </div>
         <br>
         <div>
-            <button type="button" onclick="alert('Compra')">Compra</button>
+            <form action="/purchase" method="GET">
+                <input type="submit" value="Compra-Venta">
+            </form>
         </div>
         <br>
         <div>
-            <button type="button" onclick="alert('Estado')">Estado</button>
+            <form action="/status" method="GET">
+                <input type="submit" value="Estado">
+            </form>
         </div>
         <br>
 
