@@ -4,10 +4,90 @@
 
 {% block seccion_a_desarrollar %}
 
+<hr>
 
+<header>Compra de Criptomonedas</header>
+<br>
 
+<form action="/purchase">
+    <label for="cdesde">Moneda de origen:</label><br>
+    </form>
+    <select name="cirptolista_a" form="criptoform">
+        <option value="eur">EUR</option>
+        <option value="btc">BTC</option>
+        <option value="eth">ETH</option>
+        <option value="xrp">XRP</option>
+        <option value="ltc">LTC</option>
+        <option value="bch">BCH</option>
+        <option value="bnb">BNB</option>
+        <option value="usdt">USDT</option>
+        <option value="eos">EOS</option>
+        <option value="bsv">BSV</option>
+        <option value="xlm">XLM</option>
+        <option value="ada">ADA</option>
+        <option value="trx">TRX</option>
+    </select>
 
+<br>
+<br>
 
+        <form action="/purchase">
+            <label for="cantidad">Cantidad:</label><br> <!--el "name" es luego para saber que me entra dede vies  -->
+            <input type="number" name="qcantidad" step="0.01"><br>
+        </form>
 
+<br>
 
+<form action="/purchase">
+    <label for="cpara">Moneda destino:</label><br>
+    </form>
+    <select name="cirptolist_b" form="criptoform">
+        <option value="eur">EUR</option>
+        <option value="btc">BTC</option>
+        <option value="eth">ETH</option>
+        <option value="xrp">XRP</option>
+        <option value="ltc">LTC</option>
+        <option value="bch">BCH</option>
+        <option value="bnb">BNB</option>
+        <option value="usdt">USDT</option>
+        <option value="eos">EOS</option>
+        <option value="bsv">BSV</option>
+        <option value="xlm">XLM</option>
+        <option value="ada">ADA</option>
+        <option value="trx">TRX</option>
+    </select>
+
+<br>
+<br>
+
+        <form action="/purchase" method="POST">
+            <input type="button" value="Calcular" name="recalcular">
+        </form>
+
+<br>
+
+<form action="/purchase">
+    <label for="punitario">Precio Unitario:</label><br>
+    <input name="cantidadtotal" step="0.01"><br>
+</form>
+
+<br>
+
+<form action="/purchase">
+    <label for="cantidad_label">Cantidad:</label><br>
+    <input name="cantidadtotal" step="0.01"><br>
+
+</form>
+
+<br>
+
+            <form action="/purchase" method="POST">
+                <input type="submit" value="✓">
+            </form>
+
+    <form action="/purchase">
+        <input type="submit" value="X">
+    </form>
+
+<hr>
 {% endblock %}
